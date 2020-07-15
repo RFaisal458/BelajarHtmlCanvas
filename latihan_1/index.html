@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 1</title>
+    <style>
+        #canvas {
+            width: 100%;
+            height: 500px;
+            border: 1px solid salmon;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="canvas">Sorry Your Browser Not Supported HTML Canvas</canvas>
+
+
+</body>
+
+<script type="text/javascript">
+    let canvas = document.getElementById("canvas"); // Inisialiasi tag canvas
+    let ctx = canvas.getContext('2d'); // ctx sendiri berarti context dan kita akan menggunakan context yang 2 dimensi
+
+    canvas.width = canvas.scrollWidth; // Digunakan untuk membuat element yang ada di dalam canvas menyesuaikan dengan wadahnya
+    canvas.height = canvas.scrollHeight;
+
+    ctx.fillStyle = "red"; // Default nya jika kita tidak mengisi variable fillStyle maka akan berwarna hitam,jadi untuk mengubahnya kita bisa menggunakan hexcolor atau yang lainnya
+    ctx.fillRect(20, 20, 200, 200); // fillRect sendiri adalah kita akan membuat / mengisi rectangel,singkatnya kita akan membuat sebuah object/shape
+    // parameter fillRect yaitu (posisi X,posisi Y,Width,Height)
+    ctx.fillStyle = "rgb(81, 95, 252)"; // kita akan membuat sebuah kotak baru dengan warna biru
+    ctx.fillRect(250, 20, 200, 200); // Untuk membuatnya sendiri kita hanya perlu melakukan hal yang sama seperti di atas contohnya seperti ini
+
+    ctx.fillStyle = "#fc51a9"
+    ctx.font = "30px Arial"
+    ctx.fillText("hello world", 600, 200) // Hampir mirip dengan fillRect akan tetapi fillText di gunakan untuk menulis kata
+        //Parameternya sendiri ("text",posisi X,posisi Y)
+</script>
+
+</html>
