@@ -12,7 +12,7 @@ ctx sendiri berarti adalah context,disini kita akan menggunakan 2dimensi,untuk s
 
 Di gunakan agar ukuran element yang ada di dalam responsive terhadap wadah canvasnya,jika tidak menggunakannya kita akan mendapatkan hasil seperti ini
 
-![](https://github.com/RFaisal458/BelajarHtmlCanvas/blob/master/latihan_1/tanpa_widthOrheight.png)
+![](https://github.com/RFaisal458/BelajarHtmlCanvas/blob/master/latihan_1/img/tanpa_canvas.widthOrHeight.png)
 
 ### ctx.fillStyle
 
@@ -24,7 +24,7 @@ fillRect sendiri digunakan untuk membuat sebuah element dengan parameternya (pos
 
 Untuk Hasil Akhirnya bisa di lihat pada gambar ini
 
-![Result](https://github.com/RFaisal48/BelajarHtmlCanvas/blob/master/latihan_1/img/hasil.png)
+![Result](https://github.com/RFaisal458/BelajarHtmlCanvas/blob/master/latihan_1/img/hasil.png)
 
 
 
