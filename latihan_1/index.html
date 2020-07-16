@@ -34,10 +34,14 @@
     ctx.fillStyle = "rgb(81, 95, 252)"; // kita akan membuat sebuah kotak baru dengan warna biru
     ctx.fillRect(250, 20, 200, 200); // Untuk membuatnya sendiri kita hanya perlu melakukan hal yang sama seperti di atas contohnya seperti ini
 
-    ctx.fillStyle = "#fc51a9"
-    ctx.font = "30px Arial"
-    ctx.fillText("hello world", 600, 200) // Hampir mirip dengan fillRect akan tetapi fillText di gunakan untuk menulis kata
-        //Parameternya sendiri ("text",posisi X,posisi Y)
+    ctx.fillStyle = "#fc51a9";
+    ctx.font = "Bold 30px Arial,sans-serif";
+    ctx.fillText("hello world", 600, 200); // Hampir mirip dengan fillRect akan tetapi fillText di gunakan untuk menulis kata
+        //Parameternya sendiri ("text",posisi X,posisi Y,maxWidth)
+    
+    ctx.fillStyle="salmon"
+    ctx.font="Italic 30px Arial,sans-serif"
+    ctx.strokeText("Hello World 2",600,400);
 </script>
 
 </html>
