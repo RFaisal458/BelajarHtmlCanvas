@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 2</title>
+    <style>
+        #canvas {
+            width: 100%;
+            height: 500px;
+            border: 1px solid aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="canvas">Sorry Your Browser Not Supported HTML Canvas</canvas>
+
+</body>
+
+<script type="text/javascript">
+    let canvas = document.getElementById('canvas');
+    let ctx = canvas.getContext('2d');
+
+    canvas.width = canvas.scrollWidth;
+    canvas.height = canvas.scrollHeight;
+
+    ctx.fillStyle = "red"
+    ctx.fillRect(20, 20, 200, 200);
+
+    ctx.strokeStyle = "salmon"; // Di gunakan untuk memberikan warna pada bordernya
+    ctx.lineWidth = 10; // Di gunakan untuk ketebalan dari bordernya
+    ctx.strokeRect(20, 20, 200, 200); // di gunakan untuk membuat border,untuk parameternya sendiri sama dengan fillRect()
+
+    ctx.strokeStyle = "green";
+    ctx.lineWidth = 10;
+    ctx.strokeRect(250, 20, 200, 200);
+
+    // Membuat Lingkaran 
+
+    // Lingkaran sendiri di buat dengan method ctx.arc()
+    // (posisi X,posisi Y,Radius,startAngle,EndEngle/PI,arahJarumJam(True / False:default) 
+    // atau jika kurang paham bisa lihat di bawah ini
+    //( x, y, r, sudutAwal, sudutAkhir, arah)
+
+    ctx.beginPath();
+    ctx.arc(700, 200, 50, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(700, 400, 50, 0, Math.PI * 2);
+    ctx.stroke();
+
+
+    ctx.beginPath();
+    ctx.moveTo(800, 100); // Untuk menentukan awal dari garis,parameternya sendiri (x,y)
+    ctx.lineTo(1000, 150); // Untuk menentukan akhir dari garis,parameternya sendiri (x,y) 
+
+    ctx.lineTo(1000, 300); // Jika kita ingin menyambung garisnya kita bisa melakukan lineTo() lagi
+    ctx.lineTo(800, 300); // Kita sambung lagi
+
+    ctx.closePath(); // Di gunakan untuk menutup atau menyambung dengan awalnya lagi
+    ctx.stroke();
+</script>
+
+</html>
