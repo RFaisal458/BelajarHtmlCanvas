@@ -45,3 +45,5 @@ Di gunakan untuk menutup garis atau kita akan menyambungnya dengan titik awal,co
 
 
 Untuk hasilnya sendiri bisa di lihat di bawah ini
+
+![result](https://github.com/RFaisal458/BelajarHtmlCanvas/blob/master/latihan_2/img/hasil.png)
